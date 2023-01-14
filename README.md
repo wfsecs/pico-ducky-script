@@ -11,4 +11,6 @@
 - [x] Information about OS Accounts
 - [x] Shows DIR command output
 - [x] Discord token
-- [x] All saved WIFI Credentials 
+- [x] All saved WIFI Credentials
+# Dev notes
+### Change the webhook or get häxed
