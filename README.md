@@ -15,3 +15,4 @@
 # Dev notes
 ### Change the webhook or get häxed
 # EDUCATIONAL PURPOSES ONLY!!!! >:C
+## I am not responsible for any damage
