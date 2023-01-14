@@ -14,3 +14,4 @@
 - [x] All saved WIFI Credentials
 # Dev notes
 ### Change the webhook or get häxed
+# EDUCATIONAL PURPOSES ONLY!!!! >:C
