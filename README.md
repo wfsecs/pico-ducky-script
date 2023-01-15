@@ -13,6 +13,6 @@
 - [x] Discord token
 - [x] All saved WIFI Credentials
 - [x] Minecraft Launcher Accounts
-- [ ] 
+
 # Educational purposes only.
 ### I am not responsible for any damage..
