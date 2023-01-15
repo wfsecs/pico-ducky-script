@@ -1,5 +1,5 @@
 # Pico Ducky Script
-## Steals so much stuff in under 1 minutes
+## Steals so much stuff in under 1 minute
 # What it steals?
 - [x] IP Config
 - [x] Public IP and information about it
