@@ -13,8 +13,6 @@
 - [x] Discord token
 - [x] All saved WIFI Credentials
 - [x] Minecraft Launcher Accounts
-
-# Dev notes
-### Change the webhook or get häxed
+- [ ] 
 # Educational purposes only.
 ### I am not responsible for any damage..
